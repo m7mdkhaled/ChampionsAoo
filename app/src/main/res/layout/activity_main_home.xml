@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Main.MainHome">
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/VPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/RL_Singing"
+        android:layout_width="match_parent"
+        android:layout_height="335.60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_footer_singing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Singing"
+                android:textColor="@color/colorwhite"
+                android:textSize="22sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sDance_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Dancing"
+                    android:src="@drawable/ic_button_dancing_of" />
+
+                <ImageView
+                    android:id="@+id/Sing_icon_on"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:contentDescription="@string/signup"
+                    android:src="@drawable/ic_button_singing" />
+
+                <ImageView
+                    android:id="@+id/sAct_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Acting"
+                    android:src="@drawable/ic_button_acting_of" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sDraw_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_button_drawing_of" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_bg_count_talent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="2000 Talented in"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="subscribe Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/SubsecribeColor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/sCook_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_button_cooking_of" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/RLActing"
+        android:layout_width="match_parent"
+        android:layout_height="335.60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_footer_singing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Acting"
+                android:textColor="@color/colorwhite"
+                android:textSize="22sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/aSing_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Singing"
+                    android:src="@drawable/ic_singing_icon" />
+
+                <ImageView
+                    android:id="@+id/Act_icon_on"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:contentDescription="@string/signup"
+                    android:src="@drawable/ic_acting_icon_on" />
+
+                <ImageView
+                    android:id="@+id/aCook_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Cooking"
+                    android:src="@drawable/ic_button_cooking_of" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/aDance_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_dancing_icon" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_bg_count_talent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="3606 Talented in"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="subscribe Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/SubsecribeColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/aDraw_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_drawing_icon" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/RL_Dancing"
+        android:layout_width="match_parent"
+        android:layout_height="335.60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_footer_singing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Dancing"
+                android:textColor="@color/colorwhite"
+                android:textSize="22sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dDraw_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Dancing"
+                    android:src="@drawable/ic_button_drawing_of" />
+
+                <ImageView
+                    android:id="@+id/Dance_icon_on"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:contentDescription="@string/signup"
+                    android:src="@drawable/ic_dance_icon_on" />
+
+                <ImageView
+                    android:id="@+id/dSing_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Acting"
+                    android:src="@drawable/ic_singing_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dCook_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_button_cooking_of" />
+
+                <LinearLayout
+                    android:id="@+id/DanceCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_bg_count_talent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/No_of_Dancers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="3400 Talented in"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="subscribe Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/SubsecribeColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dAct_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_button_acting_of" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/RL_Drawing"
+        android:layout_width="match_parent"
+        android:layout_height="335.60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_footer_singing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Drawing"
+                android:textColor="@color/colorwhite"
+                android:textSize="22sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rCook_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Dancing"
+                    android:src="@drawable/ic_button_cooking_of" />
+
+                <ImageView
+                    android:id="@+id/Draw_icon_on"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:contentDescription="@string/signup"
+                    android:src="@drawable/ic_drawing_icon_on" />
+
+                <ImageView
+                    android:id="@+id/rDance_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Acting"
+                    android:src="@drawable/ic_dancing_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rAct_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_button_acting_of" />
+
+                <LinearLayout
+                    android:id="@+id/DrawCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_bg_count_talent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/No_of_Painters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="2000 Talented in"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="subscribe Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/SubsecribeColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/rSing_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_singing_icon" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/RL_Cooking"
+        android:layout_width="match_parent"
+        android:layout_height="335.60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_footer_singing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Cooking"
+                android:textColor="@color/colorwhite"
+                android:textSize="22sp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cAct_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Dancing"
+                    android:src="@drawable/ic_button_acting_of" />
+
+                <ImageView
+                    android:id="@+id/Cook_icon_on"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:contentDescription="@string/signup"
+                    android:src="@drawable/ic_cooking_icon_on" />
+
+                <ImageView
+                    android:id="@+id/cDraw_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/Acting"
+                    android:src="@drawable/ic_drawing_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cSing_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_singing_icon" />
+
+                <LinearLayout
+                    android:id="@+id/CookCounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_bg_count_talent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/No_of_Chefs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="6600 Talented in"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cabin_semibold_ttf"
+                        android:text="subscribe Now"
+                        android:textAlignment="center"
+                        android:textColor="@color/SubsecribeColor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/cDance_icon_off"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_dancing_icon" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_settings">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_support">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu"
+            android:contentDescription="TODO">
+        </ImageView>
+    </LinearLayout>
+</RelativeLayout>

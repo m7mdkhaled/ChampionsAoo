@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#0A0917</color>
+
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorwhitewithshdow">#00FFFFFF</color>
+    <color name="coloCategoury">#FFFFFF</color>
+    <color name="ColorContentName">#39383f</color>
+    <color name="ColorContentNameV">#5470c0</color>
+
+
+    <color name="ColorPopularDancing">#5470c0</color>
+    <color name="ColorPopularSinging">#9b8579</color>
+    <color name="ColorPopularCooking">#f7941d</color>
+    <color name="ColorPopularFilming">#8dc63f</color>
+    <color name="ColorPopularDrawing">#00a79d</color>
+
+    <color name="ColorTextDancing">#5470c0</color>
+    <color name="ColorTextSinging">#9b8579</color>
+    <color name="ColorTextCooking">#f7941d</color>
+    <color name="ColorTextFilming">#8dc63f</color>
+    <color name="ColorTextDrawing">#00a79d</color>
+
+    <color name="colorloginLift">#5470c0</color>
+    <color name="colorloginMid">#f7941d</color>
+    <color name="colorloginRight">#00a79d</color>
+    <color name="colorloginSignUp">#304168</color>
+    <color name="ColorButtonLogin">#00a79d</color>
+    <color name="ColorloginBorderButton">#818693</color>
+    <color name="colorLoginText">#595959</color>
+
+    <color name="colorRegisterFrame">#e0e0e0</color>
+    <color name="RegButtonTalentOwner">#f7941d</color>
+    <color name="RegButtonTalentFinder">#5470c0</color>
+    <color name="TxtColorRegUser">#727272</color>
+    <color name="colorButtonRegister">#00a79d</color>
+
+    <color name="ColorPupularDancing">#5470c0</color>
+    <color name="SubsecribeColor">#f7941d</color>
+
+</resources>

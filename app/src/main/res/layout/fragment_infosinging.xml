@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/SingFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_mainsinging"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/dance_bg_art"
+        android:alpha="0.4"/>
+
+    <RelativeLayout
+        android:id="@+id/RLHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="383.59dp"
+            android:layout_height="383.59dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/Singing"
+            android:padding="20dp"
+            android:src="@drawable/content_header_singing" />
+
+        <ImageView
+
+            android:layout_width="245dp"
+            android:layout_height="245dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/Singing"
+            android:src="@drawable/pic_singing" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

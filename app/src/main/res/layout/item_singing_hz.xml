@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:background="@drawable/shape_popular_singing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView android:id="@+id/IVUserName"
+            android:layout_width="90dp"
+            android:padding="5dp"
+            android:layout_height="80dp"
+            android:src="@drawable/impopulardancing">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SingerUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/righteous_regular"
+                android:text="Moustafa Reda"
+                android:textColor="@color/colorwhite"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <TextView android:id="@+id/SingerTXTOld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous_regular"
+                android:text="35 years / male"
+                android:textColor="@color/colorwhite"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView android:id="@+id/SingerTXTAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/righteous_regular"
+                android:text="Riyadh, Ksa"
+                android:textColor="@color/colorwhite"
+                android:textSize="10sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ImgMenue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_assetoption_hz">
+        </ImageView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

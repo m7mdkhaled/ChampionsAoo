@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.Main.MainLogin">
+
+    <LinearLayout android:layout_weight="1"
+        android:id="@+id/Header"
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_cornerleft_login">
+
+        <ImageView
+                android:contentDescription="@string/Ready"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_left_login">
+
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Ready"
+                android:textColor="@color/colorwhite"
+                android:textSize="30sp">
+
+            </TextView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_cornermid_login">
+
+            <ImageView
+                android:contentDescription="@string/ToDiscover"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo_mid_login">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/ToDiscover"
+                android:textColor="@color/colorwhite"
+                android:textSize="30sp">
+
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_cornerrignt_login">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/Talent"
+                android:scaleType="centerInside"
+                android:src="@drawable/imagerighthdpi">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/righteous_regular"
+                android:gravity="center"
+                android:text="@string/Talent"
+                android:textColor="@color/colorwhite"
+                android:textSize="30sp">
+
+            </TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout  android:layout_weight="0"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TxtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/righteous_regular"
+            android:gravity="center"
+            android:text="@string/txtwelcome"
+            android:textColor="@color/colorLoginText"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <EditText
+            android:inputType="phone"
+            android:singleLine="true"
+            android:id="@+id/EnterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_edittext_login"
+            android:fontFamily="@font/righteous_regular"
+            android:hint="@string/EditTextLogin"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/EnterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/shape_edittext_login"
+                android:fontFamily="@font/righteous_regular"
+                android:hint="@string/EditTextLoginPassword"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
+            <ImageView android:id="@+id/IMLogin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/EnterPassword"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/shape_button_login"
+                android:padding="10dp"
+                android:src="@drawable/arrow">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TxtOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/righteous_regular"
+            android:gravity="center"
+            android:text="@string/txtOr"
+            android:textColor="@color/colorLoginText"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/BtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/shape_button_signup"
+        android:text="@string/signup"
+        android:textColor="@color/colorwhite">
+    </Button>
+    <TextView
+        android:id="@+id/TxtTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/cabin_semibold_ttf"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:text="@string/Terms"
+        android:textSize="5pt" />
+
+</LinearLayout>

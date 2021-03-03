@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawing"
+    android:orientation="vertical"
+    tools:context=".Ui.Main.MainDrawing">
+
+    <LinearLayout
+        android:id="@+id/HeaderDrawing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/righteous_regular"
+            android:text="Drawing"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searcheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HeaderDrawing"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/PainterSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10pt"
+            android:layout_marginTop="10pt"
+            android:layout_marginEnd="10pt"
+            android:layout_marginBottom="19pt"
+            android:background="@drawable/shape_fram_searchcategoury"
+            android:drawableStart="@drawable/ic_assetsrch"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/centurygothic400"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#fff"
+            android:textSize="18sp"
+            android:autofillHints=""
+            android:hint="Who do you want to get ?" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LinDrawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searcheng"
+        android:background="@drawable/shape_content_category"
+        android:orientation="vertical"
+        android:paddingLeft="7pt"
+        android:paddingRight="7pt">
+
+        <LinearLayout
+            android:layout_margin="10pt"
+            android:id="@+id/LinDrawingHz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtpainterHz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Popular Painter"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/righteous_regular"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDrawHz"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtpainter"
+                android:layout_marginStart="3dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LinSingingVr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinDrawingHz"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/txtpainterVr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="All Painters"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/righteous_regular"
+                android:textSize="20sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerDrawVr"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtpainterVr"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
